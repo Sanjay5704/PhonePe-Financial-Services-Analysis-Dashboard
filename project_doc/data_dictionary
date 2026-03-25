@@ -1,0 +1,113 @@
+# Data Dictionary
+
+## Overview
+
+This document explains the main tables and important columns used in the **PhonePe Financial Services Analysis Dashboard** project.
+
+The purpose of this file is to make the dataset easier to understand and to show the structure behind the dashboard analysis.
+
+---
+
+# 1. `All_Users`
+
+Contains user-level information.
+
+| Column Name | Description |
+|------------|-------------|
+| `User_ID` | Unique identifier for each user |
+| `Name` | Name of the user |
+| `Age` | Age of the user |
+| `Join_Date` | Date the user joined the platform |
+
+---
+
+# 2. `All_Transactions`
+
+Contains overall transaction-level records across services.
+
+| Column Name | Description |
+|------------|-------------|
+| `Transaction_ID` | Unique identifier for each transaction |
+| `Amount` | Monetary value of the transaction |
+| `User_ID` | User linked to the transaction |
+| `Service` | Main service category used |
+| `Service Type` | More detailed classification of the service |
+| `Payment_Status` | Status of the transaction (Success / Failed) |
+| `Reason` | Reason for payment failure or transaction issue |
+| `Date` | Date of the transaction |
+
+---
+
+# 3. `Recharge_Bills`
+
+Contains recharge and bill payment records.
+
+| Column Name | Description |
+|------------|-------------|
+| `Transaction_ID` | Unique identifier for the recharge/bill transaction |
+| `User_ID` | User linked to the transaction |
+| `Recharge_Type` | Type of recharge or bill payment |
+| `Amount` | Transaction amount |
+| `Date` | Date of the transaction |
+| `Payment_Status` | Payment outcome |
+| `Reason` | Failure or issue reason, if applicable |
+
+---
+
+# 4. `Money_Transfer`
+
+Contains money transfer-related records.
+
+| Column Name | Description |
+|------------|-------------|
+| `Transaction_ID` | Unique identifier for the transfer transaction |
+| `User_ID` | User linked to the transaction |
+| `Transfer_Type` | Type of transfer performed |
+| `Amount` | Transfer amount |
+| `Date` | Date of the transaction |
+| `Payment_Status` | Payment outcome |
+| `Reason` | Failure or issue reason, if applicable |
+
+---
+
+# 5. `Loans`
+
+Contains loan-related financial service records.
+
+| Column Name | Description |
+|------------|-------------|
+| `Transaction_ID` | Unique identifier for the loan transaction |
+| `User_ID` | User linked to the transaction |
+| `Loan_Type` | Type of loan service used |
+| `Loan_Amount` | Amount associated with the loan |
+| `Date` | Date of the transaction |
+| `Payment_Status` | Payment or processing status |
+| `Reason` | Failure or issue reason, if applicable |
+
+---
+
+# 6. `Insurance`
+
+Contains insurance-related financial service records.
+
+| Column Name | Description |
+|------------|-------------|
+| `Transaction_ID` | Unique identifier for the insurance transaction |
+| `User_ID` | User linked to the transaction |
+| `Insurance_Type` | Type of insurance service used |
+| `Premium` | Premium amount paid |
+| `Date` | Date of the transaction |
+| `Payment_Status` | Payment outcome |
+| `Reason` | Failure or issue reason, if applicable |
+
+---
+
+## Data Modeling Note
+
+The dashboard was designed using a multi-table structure, where user-level and transaction-level tables are connected through common identifiers such as `User_ID` and `Transaction_ID`.
+
+This structure helps support:
+- service-level analysis
+- user behavior analysis
+- payment trend analysis
+- category-wise reporting
