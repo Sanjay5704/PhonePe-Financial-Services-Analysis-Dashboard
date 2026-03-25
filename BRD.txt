@@ -1,0 +1,361 @@
+BUSINESS REQUIREMENTS DOCUMENT (BRD)
+
+PHONEPE FINANCIAL SERVICES ANALYSIS DASHBOARD
+
+USING DIGITAL TRANSACTION DATA
+
+---
+
+CLIENT
+
+PhonePe is one of India’s leading digital payment and financial services platforms, enabling millions of users to perform secure and convenient financial transactions.
+
+The platform offers a wide range of services such as:
+
+- Money Transfers
+- Mobile Recharges
+- Utility Bill Payments
+- Insurance Services
+- Loan-related Financial Services
+
+With increasing adoption of digital payments and financial products, there is a growing need to analyze transaction trends, user engagement, and service-level performance to support data-driven business decisions.
+
+---
+
+DATA SOURCE
+
+Dataset Used:
+PhonePe Transaction Dataset
+
+Description:
+The dataset contains structured digital transaction data related to different financial services available on the platform.
+
+The dataset is used to analyze service-level transaction behavior, identify usage patterns, and visualize key metrics across multiple categories.
+
+Key Data Areas Include:
+- Transaction Categories
+- Transaction Counts
+- Transaction Values
+- Service Types
+- User Activity
+- Time-Based Transaction Trends
+- Payment / Transaction Failure Details
+
+Typical Fields Include:
+- Transaction ID
+- Transaction Type
+- Service Category
+- Transaction Count
+- Transaction Amount / Value
+- Transaction Date / Time Period
+- User Count / Engagement Metrics
+- Payment Status / Failure Reason
+
+---
+
+OBJECTIVE
+
+The objective of this Business Requirements Document is to define the analytical and dashboarding requirements for building a Power BI-based Financial Services Analysis Dashboard using PhonePe transaction data.
+
+The dashboard is intended to help stakeholders:
+
+- Monitor digital transaction growth and service adoption
+- Analyze transaction behavior across multiple service categories
+- Track user activity and service usage patterns
+- Identify high-performing and low-performing financial services
+- Understand recurring digital payment behavior
+- Present actionable insights through a structured analytics dashboard
+
+---
+
+## BUSINESS PROBLEM
+
+As digital payment platforms continue to expand beyond simple money transfers into broader financial services, business teams require a centralized view of platform activity and service usage.
+
+### Current Challenges Include:
+- Lack of a unified view of transaction activity across services
+- Difficulty comparing performance between service categories
+- Limited visibility into user engagement trends
+- No structured dashboard for analyzing service-level usage patterns
+- Difficulty identifying failure trends and transaction bottlenecks
+- Need for clearer reporting to support business decisions
+
+---
+
+## STAKEHOLDERS
+
+The dashboard is intended to support the following stakeholders:
+
+- Business Analysts
+- Product Managers
+- Operations Team
+- Finance Team
+- Service Strategy Team
+- Executive / Management Team
+
+---
+
+## KEY PERFORMANCE INDICATORS (KPIs)
+
+### 1. Total Transactions
+Measures the total number of transactions recorded across the platform.
+
+**Formula:**  
+Total Transactions = SUM(Transaction Count)
+
+---
+
+### 2. Total Transaction Value
+Measures the total monetary value processed through the platform.
+
+**Formula:**  
+Total Transaction Value = SUM(Transaction Value)
+
+---
+
+### 3. Total Users / User Activity
+Measures the number of active users engaging with the platform over a given period.
+
+**Formula:**  
+Total Users = SUM(User Count)
+
+---
+
+### 4. Successful Transactions
+Measures the total number of successfully completed transactions.
+
+**Formula:**  
+Successful Transactions = COUNT(Transaction ID where Status = "Success")
+
+---
+
+### 5. Failed Transactions
+Measures the number of unsuccessful or failed transactions.
+
+**Formula:**  
+Failed Transactions = COUNT(Transaction ID where Status = "Failed")
+
+---
+
+### 6. Service-Wise Transaction Distribution
+Measures the contribution of each financial service category such as:
+
+- Money Transfer
+- Recharge & Bills
+- Insurance
+- Loan
+
+This KPI helps identify the most actively used services.
+
+---
+
+### 7. Transaction Trend Over Time
+Tracks how transaction activity changes across time periods.
+
+Used to identify:
+- Growth trends
+- Seasonal patterns
+- Service adoption behavior
+
+---
+
+### 8. User Trend Over Time
+Tracks platform engagement and how user participation changes over time.
+
+This KPI helps understand:
+- User growth
+- Repeat usage
+- Platform activity levels
+
+---
+
+### 9. Failure Reason Distribution
+Measures and categorizes reasons for failed or incomplete transactions.
+
+This helps in:
+- Identifying friction points
+- Improving transaction reliability
+- Understanding service issues
+
+---
+
+## FUNCTIONAL REQUIREMENTS
+
+The dashboard should meet the following functional requirements:
+
+### Dashboard & Reporting Requirements
+- Provide a multi-page interactive dashboard
+- Include separate views for:
+  - Home Overview
+  - Insurance
+  - Loan
+  - Money Transfer
+  - Recharge & Bills
+- Display service-level transaction insights clearly
+
+### Filtering & Interaction
+- Ability to filter data by:
+  - Time / Date
+  - Service Category
+  - Transaction Type
+  - Payment Status (if applicable)
+
+### Analytical Features
+- KPI cards for quick performance summary
+- Line charts for trend analysis
+- Pie / donut / bar charts for service distribution
+- Category-level and comparative visualizations
+- Failure trend visualization
+
+### Navigation
+- Clear and user-friendly navigation between dashboard pages
+- Consistent layout and design across all sections
+
+---
+
+## NON-FUNCTIONAL REQUIREMENTS
+
+The dashboard should also satisfy the following non-functional requirements:
+
+- Dashboard should be easy to use and visually clear
+- Visuals should support quick business understanding
+- Dashboard performance should remain acceptable during interaction
+- Data displayed should be accurate, consistent, and reliable
+- Layout should be suitable for business presentation and stakeholder review
+- Design should remain clean, readable, and professional
+
+---
+
+## DATA TRANSFORMATION REQUIREMENTS
+
+The following data preparation steps are required before dashboard development:
+
+- Remove duplicate or inconsistent records
+- Handle missing / null values appropriately
+- Ensure correct formatting for:
+  - Dates
+  - Transaction counts
+  - Numeric values
+- Standardize category and service labels
+- Create calculated fields / measures for KPIs
+- Build proper relationships between tables (if using multiple tables)
+- Create time-based fields for trend analysis
+- Aggregate service-level and category-level metrics for reporting
+
+---
+
+## DASHBOARD MODULES / PAGES
+
+### 1. Home Dashboard
+Provides an overall platform summary including:
+
+- Total transactions
+- Total users
+- Total transaction value
+- Service-level contribution
+- Failure reason distribution
+- Transaction and user trends over time
+
+**Purpose:**  
+To serve as the executive summary page for high-level platform analysis.
+
+---
+
+### 2. Insurance Dashboard
+Focused on insurance-related financial activity.
+
+**Purpose:**  
+To analyze transaction trends, service adoption, and activity related to insurance services.
+
+---
+
+### 3. Loan Dashboard
+Focused on loan-related usage and digital financial engagement.
+
+**Purpose:**  
+To understand user interaction with loan services and transaction movement over time.
+
+---
+
+### 4. Money Transfer Dashboard
+Focused on one of the platform’s most important transaction categories.
+
+**Purpose:**  
+To analyze transaction behavior and core platform usage through money transfer activity.
+
+---
+
+### 5. Recharge & Bills Dashboard
+Focused on recurring utility and recharge-based transactions.
+
+**Purpose:**  
+To identify recurring payment behavior and routine user engagement.
+
+---
+
+## ASSUMPTIONS
+
+The following assumptions are considered for this project:
+
+- The dataset represents valid and usable digital transaction data
+- The data is sufficient for dashboard-based trend analysis
+- No real-time API integration is required
+- The dashboard is intended for analytical and presentation purposes
+- Users of the dashboard have a basic understanding of business and transaction metrics
+
+---
+
+## RISKS AND CONSTRAINTS
+
+Potential risks and limitations include:
+
+- Missing or incomplete records in the dataset
+- Limited historical data range
+- Data quality issues affecting trend interpretation
+- Absence of some advanced business attributes
+- File size / performance limitations during dashboard development
+- Dashboard insights are dependent on available dataset scope
+
+---
+
+## EXPECTED DELIVERABLES
+
+The project is expected to deliver the following:
+
+- Cleaned and transformed dataset
+- Power BI multi-page dashboard
+- KPI-based performance analysis
+- Service-wise transaction insights
+- Dashboard screenshots and documentation
+- Business Requirements Document (BRD)
+- Analytical project repository for portfolio use
+
+---
+
+## SUCCESS CRITERIA
+
+The project will be considered successful if it achieves the following:
+
+- Provides a clear overview of digital transaction behavior
+- Enables comparison between different financial service categories
+- Highlights important usage and trend patterns
+- Supports data storytelling and business understanding
+- Delivers a clean, structured, and presentation-ready dashboard
+- Demonstrates practical Power BI and analytics skills effectively
+
+---
+
+## CONCLUSION
+
+This Business Requirements Document defines the business and analytical requirements for developing the PhonePe Financial Services Analysis Dashboard using digital transaction data.
+
+The dashboard is intended to provide a structured and interactive view of platform performance across multiple service categories, helping stakeholders better understand transaction behavior, service adoption, and overall digital engagement.
+
+By combining data visualization, KPI tracking, and service-level analysis, this project demonstrates how digital transaction data can be transformed into meaningful and decision-supporting business insights.
+
+---
+
+## PREPARED BY
+
+Sanjay Satishkumar  
+Data Analytics / Power BI Project
