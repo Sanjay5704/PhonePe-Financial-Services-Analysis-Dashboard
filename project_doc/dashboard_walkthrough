@@ -1,0 +1,101 @@
+# Dashboard Walkthrough
+
+## Overview
+
+This document provides a page-by-page walkthrough of the **PhonePe Financial Services Analysis Dashboard** built in Power BI.
+
+The dashboard is designed to provide both a high-level summary and service-specific analysis across major financial transaction categories.
+
+---
+
+# 1. Home Dashboard
+
+## Purpose
+The Home page acts as the executive summary of the project and gives a high-level overview of overall platform performance.
+
+## Visuals Included
+- KPI cards
+- Line chart
+- Pie chart
+- Bar chart
+
+## What This Page Shows
+- Overall transaction and user activity
+- High-level service contribution
+- Trend movement over time
+- Category-level performance summary
+
+---
+
+# 2. Insurance Dashboard
+
+## Purpose
+The Insurance page focuses on insurance-related transactions and service usage patterns.
+
+## Visuals Included
+- Line chart
+- Bar chart
+- Donut chart
+
+## What This Page Shows
+- Insurance activity over time
+- Category-level insurance usage
+- Distribution of insurance-related transaction behavior
+
+---
+
+# 3. Loan Dashboard
+
+## Purpose
+The Loan page is used to analyze digital loan-related activity and user engagement.
+
+## Visuals Included
+- Line chart
+- Bar chart
+
+## What This Page Shows
+- Loan transaction trends over time
+- Comparison of loan-related activity across categories
+
+---
+
+# 4. Money Transfer Dashboard
+
+## Purpose
+The Money Transfer page focuses on one of the platform’s most important and frequently used services.
+
+## Visuals Included
+- Line chart
+- Pie chart
+
+## What This Page Shows
+- Money transfer transaction trend
+- Distribution of transfer activity across categories
+
+---
+
+# 5. Recharge & Bills Dashboard
+
+## Purpose
+The Recharge & Bills page highlights recurring digital payment behavior related to utility and recharge services.
+
+## Visuals Included
+- Line chart
+- Donut chart
+
+## What This Page Shows
+- Recharge and bill payment trend over time
+- Distribution of recharge/bill service activity
+
+---
+
+## Final Note
+
+This dashboard was designed to balance:
+
+- business readability
+- visual storytelling
+- service-level analysis
+- practical Power BI reporting
+
+By separating the dashboard into focused pages, the project becomes easier to understand, navigate, and present.
