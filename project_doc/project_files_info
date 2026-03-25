@@ -1,0 +1,42 @@
+# Project Files Information
+
+## Overview
+
+This repository contains the documentation, screenshots, and supporting materials for the **PhonePe Financial Services Analysis Dashboard** project built using Power BI.
+
+Some original project files are not directly included due to GitHub file size limitations.
+
+---
+
+## Files Included in This Repository
+
+This repository includes:
+
+- `README.md` → Main project documentation
+- `images/` → Dashboard preview screenshots
+- `project_docs/BRD.md` → Business Requirements Document
+- Additional supporting documentation files
+
+---
+
+## Files Not Included Directly
+
+### Power BI Dashboard File (`.pbix`)
+The original Power BI dashboard file used for this project is larger than GitHub’s standard upload size limit and is therefore not uploaded directly to this repository.
+
+### Full Dataset
+The complete source dataset used in this project also exceeds the standard upload size limit and is not included in full.
+
+---
+
+## Why This Is Still Sufficient
+
+Although the original `.pbix` file and full dataset are not uploaded, this repository still provides a complete understanding of the project through:
+
+- Dashboard screenshots
+- Business context and objectives
+- Data structure explanation
+- Key insights and findings
+- Page-by-page dashboard walkthrough
+
+This makes the project suitable for portfolio presentation and project review.
