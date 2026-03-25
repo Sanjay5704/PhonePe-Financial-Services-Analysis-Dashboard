@@ -1,0 +1,55 @@
+# Insights Summary
+
+## Overview
+
+This document highlights some of the key analytical insights derived from the **PhonePe Financial Services Analysis Dashboard**.
+
+The purpose of these insights is to show how the dashboard supports business understanding and data-driven decision-making.
+
+---
+
+## Key Insights
+
+### 1. Money Transfer appears to be one of the most active core services
+The dashboard suggests that money transfer is a major contributor to transaction activity, making it one of the most important service categories on the platform.
+
+### 2. Recharge & Bill Payments show recurring transaction behavior
+Recharge and bill payment services reflect routine and repeat usage patterns, indicating consistent user engagement over time.
+
+### 3. Insurance and Loan services represent broader financial engagement
+The inclusion of Insurance and Loan dashboards highlights how digital payment platforms are expanding beyond basic payments into full financial service ecosystems.
+
+### 4. Transaction activity changes over time across service categories
+The line charts across dashboard pages help identify patterns in transaction behavior and service usage over time.
+
+### 5. Payment status and failure reasons are important for operational understanding
+Tracking successful and failed transactions helps identify possible friction points and supports service performance monitoring.
+
+### 6. Service-level segmentation improves analytical clarity
+Breaking the dashboard into separate service pages allows for more focused analysis instead of combining all services into one general overview.
+
+### 7. User and transaction-level data together provide stronger insights
+Combining user information with transaction records helps connect service activity with platform participation and user behavior.
+
+---
+
+## Business Relevance
+
+These insights are useful for understanding:
+
+- which services drive the most activity
+- how users interact with financial services
+- where operational monitoring is needed
+- how transaction trends support business reporting
+
+---
+
+## Conclusion
+
+This dashboard is designed not just to visualize data, but to organize financial service activity into a format that is easier to interpret, compare, and communicate.
+
+It reflects a practical data analytics workflow that combines:
+- data understanding
+- dashboard design
+- business interpretation
+- analytical storytelling
