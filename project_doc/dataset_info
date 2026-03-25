@@ -1,0 +1,71 @@
+# Dataset Information
+
+## Overview
+
+This project uses a structured multi-table PhonePe-style financial services dataset to analyze digital transaction behavior across different service categories.
+
+The dataset was used to build a multi-page Power BI dashboard focused on transaction trends, user activity, service performance, and payment outcomes.
+
+---
+
+## Dataset Structure
+
+The dataset is organized into multiple related tables to support service-level analysis and dashboard filtering.
+
+### Tables Included
+
+- `All_Users`
+- `All_Transactions`
+- `Recharge_Bills`
+- `Money_Transfer`
+- `Loans`
+- `Insurance`
+
+---
+
+## Purpose of Each Table
+
+### `All_Users`
+Contains user-level information used to analyze user activity and platform participation.
+
+### `All_Transactions`
+Acts as the central transaction table and includes overall transaction activity across services.
+
+### `Recharge_Bills`
+Contains recharge and bill payment transaction details.
+
+### `Money_Transfer`
+Contains money transfer-related transaction records.
+
+### `Loans`
+Contains loan-related transaction records.
+
+### `Insurance`
+Contains insurance-related transaction records.
+
+---
+
+## Analytical Use of the Dataset
+
+The dataset supports analysis in the following areas:
+
+- Overall transaction volume and value
+- User activity and onboarding trends
+- Service-wise financial behavior
+- Payment success and failure tracking
+- Category-level transaction patterns
+- Time-based trend analysis
+
+---
+
+## Note
+
+The full original dataset used in this project is larger than GitHub’s standard upload size limit and is therefore not included in this repository.
+
+However, the repository includes:
+- Dashboard screenshots
+- Project documentation
+- Business Requirements Document (BRD)
+- Analytical summaries and supporting project files
+
+This ensures the project remains well-documented and easy to understand.
