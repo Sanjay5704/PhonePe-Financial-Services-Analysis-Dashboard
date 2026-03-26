@@ -166,16 +166,20 @@ It demonstrates how transactional data can be converted into a usable reporting 
 
 ## 📸 Dashboard Screenshots
 
-### Dashboard Overview
-![Dashboard Overview](images/dashboard1.png)
+### Home Page
+![Home Page](images/HOME_PAGE.png)
 
-### Transaction / Service Analysis
-![Transaction Service Analysis](images/dashboard2.png)
+### Insurance Analysis
+![Insurance Analysis](images/INSURANCE.png)
 
-### Category / Usage Analysis
-![Category Usage Analysis](images/dashboard3.png)
+### Loans Analysis
+![Loans Analysis](images/LOANS.png)
 
-> If your screenshot file names are different, update them with the exact names used in the `images/` folder.
+### Money Transfer Analysis
+![Money Transfer Analysis](images/MONEY_TRANSFER.png)
+
+### Recharge & Bills Analysis
+![Recharge & Bills Analysis](images/RECHARGE&BILLS.png)
 
 ---
 
