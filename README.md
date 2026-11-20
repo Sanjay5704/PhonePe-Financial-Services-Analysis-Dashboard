@@ -20,7 +20,7 @@ All numbers are for Jan–Dec 2024 and come from the dashboard.
 
 ## Dataset
 
-- **Source:** the dataset and project idea come from Top Varsity's [PhonePe End-to-End Data Analysis Project](https://topvarsity.in/phone-pe-end-to-end-data-analysis-project-best-power-bi-project-for-data-analyst-top-varsity/).
+- **Source:** I built this by following Top Varsity's guided [PhonePe End-to-End Data Analysis Project](https://topvarsity.in/phone-pe-end-to-end-data-analysis-project-best-power-bi-project-for-data-analyst-top-varsity/). The dataset, icons, colour theme and 5-page layout come from that project. The key findings above are my own analysis.
 - **This is synthetic or sample data, not real PhonePe data.** It has 100K users and 300K transactions, all in 2024.
 - **Tables:** `All_Users`, `All_Transactions`, `Recharge_Bills`, `Money_Transfer`, `Loans`, `Insurance`
 
