@@ -1,238 +1,82 @@
-# 📊 PhonePe Financial Services Analysis Dashboard
+# PhonePe Financial Services Analysis Dashboard
 
-A business-focused **Power BI dashboard project** built to analyze **digital payment activity, transaction behavior, financial service usage, and category-level performance** inspired by the PhonePe ecosystem.
+A multi-page **Power BI** dashboard for a PhonePe-style digital payments platform. It covers transactions, users, failed payments and four services: Loans, Insurance, Money Transfer, and Recharge & Bills.
 
-This project was created to demonstrate how a fintech or digital payments company can use structured reporting and dashboarding to understand transaction patterns, user activity, and service performance through interactive business intelligence reporting.
+![Home page of the dashboard](images/HOME_PAGE.png)
 
----
-
-## 📌 Project Overview
-
-With the rapid growth of digital payments, businesses need structured reporting systems to understand how users interact with different financial services and transaction categories.
-
-This dashboard was built as a practical analytics project to transform payment-related data into an interactive reporting solution that helps visualize transaction behavior and category-wise usage.
-
-The goal was not just to create visuals, but to approach the project from a **business intelligence perspective** — focusing on how dashboard reporting can support better understanding of digital payment activity.
+**Tools:** Power BI · Power Query · DAX · Excel
 
 ---
 
-## ❗ Problem Statement
+## Key findings
 
-Digital payment platforms generate large amounts of transactional and service-related data.
+All numbers are for Jan–Dec 2024 and come from the dashboard.
 
-Without proper reporting and visualization, it becomes difficult to identify:
-
-- which services or categories are most actively used
-- how transaction behavior is distributed across different segments
-- what usage patterns can support business understanding
-- how key transaction metrics can be monitored effectively
-
-This project addresses that challenge by converting raw payment-related data into an interactive dashboard designed for reporting and analysis.
+1. **Loans bring in about 76% of the money.** Loans account for 2.53bn of the 3,333M total. Insurance, Money Transfer and Recharge & Bills share the rest, and Recharge & Bills is the smallest. Most transactions are small payments, but most of the value comes from loans.
+2. **4% of transactions fail, and the biggest cause is on the platform side.** 12K of 300K transactions failed. Server errors cause 33.8% of failures, more than Wrong PIN (27.6%) or Insufficient balance (27.5%). Fixing server errors would recover the most failed payments.
+3. **The four loan types bring in almost the same amount.** Car loans (643.6M), mutual funds (634.2M), gold loans (632.4M) and credit score (622.2M) are within 3.5% of each other. No single product drives loan revenue. This even spread is also typical of synthetic data (see below).
 
 ---
 
-## 🎯 Business Objective
+## Dataset
 
-The objective of this project is to build a dashboard that helps monitor and analyze:
+- **Source:** the dataset and project idea come from Top Varsity's [PhonePe End-to-End Data Analysis Project](https://topvarsity.in/phone-pe-end-to-end-data-analysis-project-best-power-bi-project-for-data-analyst-top-varsity/).
+- **This is synthetic or sample data, not real PhonePe data.** It has 100K users and 300K transactions, all in 2024.
+- **Tables:** `All_Users`, `All_Transactions`, `Recharge_Bills`, `Money_Transfer`, `Loans`, `Insurance`
 
-- Transaction activity
-- Financial service usage
-- Category-level contribution
-- User transaction behavior
-- Key business reporting KPIs
-
-The dashboard is designed to make transaction data easier to understand, compare, and interpret.
+The raw Excel file is not in this repo, but the data is embedded in the `.pbix` file.
 
 ---
 
-## 📊 Dashboard Scope
+## How to open
 
-This dashboard focuses on the following analytical areas:
-
-### 1. Transaction Performance Monitoring
-Tracks transaction activity using core business metrics such as:
-
-- Total Transaction Count
-- Total Transaction Value
-- Average Transaction Value
-
-### 2. Category / Service Analysis
-Breaks down the data into categories to understand where most platform activity is happening.
-
-This helps evaluate:
-
-- Usage distribution
-- Category contribution
-- Service-level engagement
-
-### 3. User Activity Analysis
-Provides visibility into how users interact with the platform based on the available dataset.
-
-This helps support understanding of:
-
-- transaction behavior
-- activity distribution
-- user engagement patterns
-
-### 4. Interactive Reporting
-The dashboard includes filters and slicers to allow users to explore the data dynamically based on:
-
-- Category
-- Service type
-- Transaction metrics
+1. Download [`PhonePe_Dashboard.pbix`](PhonePe_Dashboard.pbix). It is about 30 MB.
+2. Open it in **Power BI Desktop** (free, Windows).
+3. Use the side menu to switch pages and the date slider to filter.
 
 ---
 
-## 💡 Key Business Questions Answered
+## Dashboard pages
 
-This dashboard is designed to help answer questions such as:
+| Page | What it shows |
+|---|---|
+| Home | Total amount, users, transactions, failed transactions, amount by service, monthly trend, failure reasons |
+| Loans | Amount by loan type, payment status, failure reasons, monthly trend |
+| Insurance | Amount by insurance type (car, term life, bike, health), payment status, failure reasons, monthly trend |
+| Money Transfer | Monthly transfer count and amount |
+| Recharge & Bills | Monthly recharge count and amount |
 
-- Which categories contribute the highest transaction volume and value?
-- Which services are most actively used?
-- What patterns can be observed in transaction behavior?
-- How is digital payment activity distributed across the available data?
-- Which metrics are most useful for tracking platform activity?
+<details>
+<summary>More screenshots</summary>
 
-These are common questions addressed in analytics, reporting, and business intelligence workflows.
+### Loans
+![Loans](images/LOANS.png)
+
+### Insurance
+![Insurance](images/INSURANCE.png)
+
+### Money Transfer
+![Money Transfer](images/MONEY_TRANSFER.png)
+
+### Recharge & Bills
+![Recharge & Bills](images/RECHARGE&BILLS.png)
+
+</details>
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## Repository structure
 
-- **Power BI** – dashboard development and visual analytics
-- **Power Query** – data cleaning and transformation
-- **DAX** – KPI calculations and business logic
-- **Excel / CSV** – data preparation and source handling
-- **GitHub** – documentation and project showcase
-
----
-
-## 📂 Repository Structure
-
-```bash
-PhonePe-Financial-Services-Analysis-Dashboard/
-│
-├── images/              # Dashboard screenshots and visual assets
-├── project_doc/         # Supporting project documents
-├── BRD.txt              # Business Requirement Document
-├── README.md            # Project documentation
+```
+├── PhonePe_Dashboard.pbix   # Power BI report (with data)
+├── images/                  # Dashboard screenshots
+├── project_doc/             # Walkthrough, data dictionary, dataset notes
+├── BRD.txt                  # Business requirements document
+└── README.md
 ```
 
 ---
 
-## 📁 Project Documentation
+## Author
 
-This repository also includes supporting documentation to communicate the business and reporting context of the dashboard.
-
-### Included Files
-- **BRD.txt** – explains the business requirement perspective behind the project
-- **project_doc/** – contains supporting project-related documents
-- **images/** – stores dashboard screenshots for visual reference
-
-This structure helps present the project in a more complete and portfolio-ready way.
-
----
-
-## 🧠 Dashboard Design Approach
-
-This project was built with a **reporting-first mindset**, not just a visualization-first approach.
-
-The dashboard was structured around common analytics practices such as:
-
-- KPI reporting
-- category-level comparison
-- service-based analysis
-- business-focused data storytelling
-- interactive exploration of transaction data
-
-This makes the project more aligned with how dashboards are used in real business and product analysis scenarios.
-
----
-
-## 🌍 Business Relevance
-
-A dashboard like this can be useful in domains such as:
-
-- **FinTech**
-- **Digital Payments**
-- **Financial Services**
-- **Business Intelligence**
-- **Product Analytics**
-- **Operations & Strategy**
-
-It demonstrates how transactional data can be converted into a usable reporting layer for performance monitoring and decision support.
-
----
-
-## 📸 Dashboard Screenshots
-
-### Home Page
-![Home Page](images/HOME_PAGE.png)
-
-### Insurance Analysis
-![Insurance Analysis](images/INSURANCE.png)
-
-### Loans Analysis
-![Loans Analysis](images/LOANS.png)
-
-### Money Transfer Analysis
-![Money Transfer Analysis](images/MONEY_TRANSFER.png)
-
-### Recharge & Bills Analysis
-![Recharge & Bills Analysis](images/RECHARGE&BILLS.png)
-
----
-
-## 🚀 How to Use
-
-1. Clone or download this repository
-2. Open the Power BI project file (`.pbix`) if included
-3. Review the dashboard pages and visuals
-4. Use filters and slicers to interact with the report
-5. Explore KPIs, transaction behavior, service usage, and category-level insights
-
----
-
-## 🧩 Skills Demonstrated
-
-This project demonstrates practical capability in:
-
-- Data cleaning and transformation
-- Dashboard development
-- KPI reporting
-- DAX-based calculations
-- Business problem framing
-- Analytical storytelling
-- Insight communication through data visualization
-
----
-
-## 📌 What This Project Demonstrates
-
-This project reflects an understanding of how dashboards should be built not only for presentation, but for actual reporting and analytical use cases.
-
-It demonstrates the ability to:
-
-- convert raw data into a structured analytical view
-- build dashboards around business questions
-- present performance insights in a decision-friendly format
-
----
-
-## 🔮 Future Enhancements
-
-Possible future improvements include:
-
-- More advanced DAX measures
-- Additional service-level breakdowns
-- Improved dashboard interactivity
-- Enhanced KPI tracking
-- Integration with larger or more dynamic datasets
-
----
-
-## 👨‍💻 Author
-
-**Sanjay Satishkumar**
-
-This project is part of my portfolio in **Data Analytics, Business Intelligence, and Dashboard Development**.
+**Sanjay Sathish Kumar** · [GitHub](https://github.com/Sanjay5704) · [LinkedIn](https://www.linkedin.com/in/sanjaysathishkumar)

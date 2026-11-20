@@ -58,14 +58,13 @@ The dataset supports analysis in the following areas:
 
 ---
 
+## Source
+
+The dataset and project idea come from Top Varsity's PhonePe End-to-End Data Analysis Project:
+https://topvarsity.in/phone-pe-end-to-end-data-analysis-project-best-power-bi-project-for-data-analyst-top-varsity/
+
+It is synthetic or sample data (100K users, 300K transactions in 2024), not real PhonePe data.
+
 ## Note
 
-The full original dataset used in this project is larger than GitHub’s standard upload size limit and is therefore not included in this repository.
-
-However, the repository includes:
-- Dashboard screenshots
-- Project documentation
-- Business Requirements Document (BRD)
-- Analytical summaries and supporting project files
-
-This ensures the project remains well-documented and easy to understand.
+The raw Excel file is not in this repository, but the data is embedded in `PhonePe_Dashboard.pbix`.
